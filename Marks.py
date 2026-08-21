@@ -10,16 +10,18 @@ marks2 = int(input("Enter marks for subject 2: "))
 marks3 = int(input("Enter marks for subject 3: "))
 
 total_marks = marks1 + marks2 + marks3
-percentage = (total_marks / 300) * 100
+percentage = (total_marks / 3)
 
-if percentage >= 90:
-    grade = "Distinction"
-elif percentage >= 80:
-    grade = "First Class"
-elif percentage >= 60:
-    grade = "Second Class"
+if marks1 >=40 and marks2 >=40 and marks3 >=40:
+    if percentage >= 90:
+        grade = "Distinction"
+    elif percentage >= 80:
+        grade = "First Class"
+    elif percentage >= 60:
+        grade = "Second Class"
 else:
     grade = "Fail"
+
 
 print("Total Marks:", total_marks)
 print("Percentage:", percentage)
