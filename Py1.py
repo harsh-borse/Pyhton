@@ -6,4 +6,4 @@ if age < 18:
     print("Since your age is less than 18, \nYou are not eligible to vote.")
 else:
     print("You are eligible to vote.")
-    
+    print(f"Your age is {age}, so you can apply for a Driving License.")
